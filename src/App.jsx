@@ -157,7 +157,7 @@ const App = () => {
                 onChange={(e) => setText(e.target.value)}
               />
               <Button variant="solid" size="md" mt={4} onClick={checkForAI}>
-                {loading ? "Checking..." : "Check for AI"}
+                {loading ? <div className="loader"></div> : "Check for AI"}
               </Button>
 
               <Stack
